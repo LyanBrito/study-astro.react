@@ -6,10 +6,16 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "biome format --write ./src",
+    "lint": "biome lint --write ./src",
+    "check": "biome check --write ./src"
   },
   "dependencies": {
     "@astrojs/react": "^4.1.5",
     "astro": "^5.1.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
   }
 }
