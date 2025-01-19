@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font: 400 30px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #646579;
+  font: 400 30px;
+}
