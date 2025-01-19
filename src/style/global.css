@@ -12,7 +12,7 @@ a {
   color: inherit;
 }
 body {
-  font: 400 12px;
+  font: 400 30px;
 }
 h1,
 h2,
@@ -21,4 +21,5 @@ h4,
 h5,
 h6 {
   color: #646579;
+  font: 400 30px;
 }
