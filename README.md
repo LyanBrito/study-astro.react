@@ -6,6 +6,20 @@ Este é um projeto de landing page desenvolvido utilizando Astro, React e LESS, 
 
 O design desta landing page foi planejado e prototipado utilizando o **Figma**
 
+## 💡 O que é o Astro?
+Astro é um framework moderno focado em gerar sites rápidos e eficientes. Seu grande diferencial é a renderização **"zero JavaScript por padrão"**, entregando apenas HTML puro para páginas estáticas, o que garante performance superior.
+
+#### Diferenciais:
+- **Zero JavaScript** por padrão: Gera HTML puro e carrega JavaScript apenas quando necessário.
+- **Compatível com múltiplos frameworks:** Use React, Vue, Svelte, e outros no mesmo projeto.
+- **Islands Architecture:** Componentes dinâmicos são carregados sob demanda, otimizando o desempenho.
+- **Builds rápidos:** Ideal para sites estáticos otimizados para SEO, como blogs e landing pages.
+
+#### Comparação com outros frameworks:
+- **Astro vs. Next.js:** Foco em páginas estáticas rápidas, enquanto Next.js se destaca em aplicações dinâmicas.
+- **Astro vs. Gatsby:** Astro é mais leve, eliminando JavaScript desnecessário.
+- **Astro vs. Nuxt:** Ideal para sites multipáginas, enquanto Nuxt é mais voltado para SPAs.
+
 ## 📁 Estrutura do Projeto
 
 Abaixo está a estrutura básica do projeto para garantir que ele siga boas práticas de organização:
