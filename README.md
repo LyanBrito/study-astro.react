@@ -2,9 +2,9 @@
 
 Este é um projeto de landing page desenvolvido utilizando Astro, React e LESS, aplicando as melhores práticas de desenvolvimento moderno. O objetivo é criar uma página eficiente, modular e fácil de manter.
 
-## 🎨 Design no Figma
+## 🖌️ Design no Figma
 
-O design desta landing page foi planejado e prototipado utilizando o **Figma**
+O design desta landing page foi planejado e prototipado utilizando o [**Figma**](https://www.figma.com/design/jRQgPJeUwiumGfbrbvZ3iY/LandingPageArsh-(Community)?node-id=106-49&t=spP08zAWRfAGC9ZZ-0)
 
 ## 💡 O que é o Astro?
 Astro é um framework moderno focado em gerar sites rápidos e eficientes. Seu grande diferencial é a renderização **"zero JavaScript por padrão"**, entregando apenas HTML puro para páginas estáticas, o que garante performance superior.
@@ -20,27 +20,38 @@ Astro é um framework moderno focado em gerar sites rápidos e eficientes. Seu g
 - **Astro vs. Gatsby:** Astro é mais leve, eliminando JavaScript desnecessário.
 - **Astro vs. Nuxt:** Ideal para sites multipáginas, enquanto Nuxt é mais voltado para SPAs.
 
+## 🎨 O que é LESS?
+LESS (Leaner Style Sheets) é uma extensão dinâmica do CSS que adiciona recursos poderosos como variáveis, aninhamento, funções e mixins. Isso torna o CSS mais eficiente, modular e fácil de manter, especialmente em projetos grandes.
+
+#### Principais benefícios do LESS:
+- Variáveis: Armazene valores (como cores, fontes e espaçamentos) em variáveis reutilizáveis.
+- Aninhamento: Escreva CSS de forma hierárquica, refletindo a estrutura do HTML.
+- Mixins: Reutilize conjuntos de propriedades CSS em várias partes do projeto.
+- Funções: Use funções matemáticas e de manipulação de cores diretamente no CSS.
+Ao usar LESS, é possível organizar melhor os estilos e aplicar mudanças de forma rápida e eficiente.
+
 ## 📁 Estrutura do Projeto
 
 Abaixo está a estrutura básica do projeto para garantir que ele siga boas práticas de organização:
 
 ```sh
-        src/
+       src/
+    ├── assets/                     # Arquivos estáticos (imagens, fontes, etc.)
     ├── components/
-    │   ├── assets/            # Imagens e outros arquivos estáticos
-    │   ├── astro/
-    │   │   └── Welcome.astro
-    │   ├── react/
-    │   │   └── Button.jsx
+    │   ├── Component/              # Nome do componente a ser criado
+    │   │   ├── component.jsx       # Component em JSX
+    │   │   ├── component.astro     # Componente em Astro
+    │   │   └── index.less          # Estilização do componente
+    │   ├── App.astro               # Componente principal
     ├── layouts/
-    │   └── MainLayout.astro
-    ├── pages/
-    │   ├── index.astro
-    │   └── about.astro
-    └── styles/
-        ├── reset.less         # Reset de estilos
-        ├── variables.less     # Variáveis globais de cores, fontes, espaçamentos
-        └── global.less        # Estilos globais da página
+    │   └── MainLayout.astro        # Layout principal do projeto
+    ├── pages/                      # Diretório das paginas do projeto
+    │   └── index.astro             # Página principal
+    ├── style/
+    │   ├── global.css              # Arquivo CSS gerado após a compilação do LESS
+    │   ├── global.less             # Estilos globais da aplicação
+    │   ├── reset.less              # Reset de estilos para consistência entre navegadores (não precisa ser compilado)
+    │   └── variables.less          # Variáveis de estilo (não precisa ser compilado)
 ```
 
 ## 🛠️ Ferramentas Utilizadas
@@ -83,6 +94,8 @@ Abaixo está a estrutura básica do projeto para garantir que ele siga boas prá
 | `npm run preview`         | Preview your build locally, before deploying       |
 | `npm run astro ...`       | Roda comandos CLI como: `astro add`, `astro check` |
 | `npm run astro -- --help` | Lista de ajuda com comandos CLI                    |
+
+Para evitar o uso do comando `lessc .\global.less .\global.css` para criar o arquivo `.css`, utilizo a extensão [Easy Less](https://marketplace.visualstudio.com/items?itemName=mrcrowl.easy-less)no VSCode, que cria automaticamente um arquivo .css cada vez que atualiza o arquivo.
 
 ## 🌱 Contribuições
 
