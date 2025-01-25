@@ -1,7 +1,18 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url(https://fonts.gstatic.com/s/nunito/v26/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNirXA3ig.ttf) format('truetype');
+  font-style: normal;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 ul,
 ol {
@@ -11,15 +22,16 @@ a {
   text-decoration: none;
   color: inherit;
 }
-body {
-  font: 400 30px;
-}
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  color: #646579;
-  font: 400 30px;
+h6,
+p,
+a,
+button {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #23242A;
 }
