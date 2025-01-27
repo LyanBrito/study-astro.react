@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url(https://fonts.gstatic.com/s/nunito/v26/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNirXA3ig.ttf) format('truetype');
+  font-style: normal;
+}
+.button-1,
+.button-2 {
+  padding: 12px 18px;
+  border-radius: 6px;
+  background-color: #F73C6B;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.button-2 {
+  border: 1px solid #FFA3AB;
+  color: #FFA3AB;
+  background-color: transparent;
+}
