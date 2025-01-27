@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url(https://fonts.gstatic.com/s/nunito/v26/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNirXA3ig.ttf) format('truetype');
+  font-style: normal;
+}
+.HeroWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
