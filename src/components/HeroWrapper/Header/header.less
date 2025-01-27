@@ -1,0 +1,33 @@
+@import "../../../style/variables.less";
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    width: 82.81690141%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+a{
+    font-family: @primary-font, sans-serif;
+    font-weight: @link-weight;
+    font-size: @link-size;
+    line-height: @link-lh;
+    color: @gray-200;
+    cursor: pointer;
+    font-style: normal;
+        &:hover{
+            color: @blue-100;
+        }
+}
+.loginWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
