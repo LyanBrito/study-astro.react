@@ -7,10 +7,23 @@
     border: none;
     color: @white-100;
     cursor: pointer;
+    &:hover{
+        border: 1px solid @red-200;
+        color: @red-200;
+        background-color: transparent;
+        padding: 11px 17px;
+    }
 }
 
 .button-2 {
-    border: 1px solid @red-100;
-    color: @red-100;
+    border: 1px solid @red-200;
+    border-radius: 0px;
+    color: @red-200;
     background-color: transparent;
+    &:hover{
+        background-color: @red-200;
+        color: @white-100;
+        padding: 12px 18px;
+        border: 1px solid @red-200;
+    }
 }
