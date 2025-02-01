@@ -1,14 +1,9 @@
-@font-face {
-  font-family: 'Nunito';
-  src: url(https://fonts.gstatic.com/s/nunito/v26/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNirXA3ig.ttf) format('truetype');
-  font-style: normal;
-}
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 40px;
-  width: 82.81690141%;
+  width: 82.81%;
 }
 nav {
   display: flex;
@@ -17,8 +12,8 @@ nav {
   gap: 30px;
 }
 a {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #4F4F4F;

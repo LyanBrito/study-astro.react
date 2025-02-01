@@ -21,7 +21,7 @@ Astro é um framework moderno focado em gerar sites rápidos e eficientes. Seu g
 - **Astro vs. Nuxt:** Ideal para sites multipáginas, enquanto Nuxt é mais voltado para SPAs.
 
 ## 🎨 O que é LESS?
-LESS (Leaner Style Sheets) é uma extensão dinâmica do CSS que adiciona recursos poderosos como variáveis, aninhamento, funções e mixins. Isso torna o CSS mais eficiente, modular e fácil de manter, especialmente em projetos grandes.
+LESS (Leaner Style Sheets) é uma extensão dinâmica do CSS que adiciona recursos poderosos como variáveis, aninhamento, funções e mixins. Isso torna o CSS mais eficiente, modular e fácil de manter, especialmente em projetos grandes. A compilação do LESS converte o código de arquivos .less para CSS padrão, permitindo o uso de variáveis, alinhamento e outras funcionalidades antes de gerar o CSS final.
 
 #### Principais benefícios do LESS:
 - Variáveis: Armazene valores (como cores, fontes e espaçamentos) em variáveis reutilizáveis.
@@ -36,13 +36,15 @@ Abaixo está a estrutura básica do projeto para garantir que ele siga boas prá
 
 ```sh
        src/
-    ├── assets/                     # Arquivos estáticos (imagens, fontes, etc.)
+    ├── assets/                     # Arquivos estáticos
     ├── components/
-    │   ├── Component/              # Nome do componente a ser criado
-    │   │   ├── component.jsx       # Component em JSX
+    │   ├── Componente/             # Nome do componente a ser criado
     │   │   ├── component.astro     # Componente em Astro
     │   │   └── index.less          # Estilização do componente
-    │   ├── App.astro               # Componente principal
+    │   ├── reactComponents/        # Componentes React reutilizáveis
+    │   │   ├── component.jsx       # Componente em React
+    │   │   └── index.less          # Estilização do componente
+    ├── imgs/                       # Pasta para imagens
     ├── layouts/
     │   └── MainLayout.astro        # Layout principal do projeto
     ├── pages/                      # Diretório das paginas do projeto

@@ -1,6 +1,12 @@
 @import "./variables.less";
 @import "./reset.less";
 
+@font-face {
+    font-family: @primary-font;
+    src: url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap) format('truetype');
+    font-style: normal;
+}
+
 h1,
 h2,
 h3,
@@ -11,7 +17,21 @@ p,
 a,
 button {
     font-family: @primary-font, sans-serif;
+    font-weight: @link-weight;
+    line-height: @link-lh;
+    letter-spacing: @letter-sp;
     font-size: @text-size;
     color: @black-200;
+
+}
+h1{
+    font-size: @title-size;
+    font-weight: @title-weight;
+    line-height: @title-lh;
+}
+h4{
+    font-size: @logo-size;
+    font-weight: @logo-weight;
+    line-height: @logo-lh;
 
 }
